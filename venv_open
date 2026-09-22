@@ -1,0 +1,8 @@
+from pathlib import Path
+import environment.yml
+
+file_in = Path("example.yaml")
+
+yaml = YAML()
+env_data = yaml.load(file_in)["env_variables"]
+print("".join([f"{k}={v!r}\n" for k, v in env_data.items()]))

@@ -1,0 +1,19 @@
+name: datascience
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - pip
+  - pip:
+      - jupyterlab
+      - matplotlib
+      - numpy
+      - swig
+      - torch
+      - torchvision
+      - pandas
+      - xgboost
+      - seaborn
+      - scipy
+      - scikit-learn
+      - skorch
